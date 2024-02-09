@@ -1,5 +1,7 @@
 import Vapi from '@vapi-ai/web';
-const vapi = new Vapi('e1bfa967-1e29-438e-a285-acf305c01d7b');
+
+const vapiKey = process.env.VAPI_KEY ?? "";
+const vapi = new Vapi(vapiKey);
 
 let customerIssue: any[] = [];
 
